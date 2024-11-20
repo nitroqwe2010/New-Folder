@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+.box {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1250px) {
+    body {
+        background-color: greenyellow;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .box {
+        background-color: blueviolet;
+        width: 300px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 637px) {
+    body {
+        background-color: aquamarine;
+    }
+
+    .box {
+        width: 500px;
+        height: 450px;
+        background-color: bisque;
+    }
+}
